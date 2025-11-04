@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resep Makanan Nusantara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash">
+    <img src="logo.jpg" alt="Logo Aplikasi" class="logo" />
+    <h2>Aplikasi Resep Makanan</h2>
+  </div>
+
+  <!-- Halaman Utama -->
+  <div class="app hidden" id="home">
+    <header>
+      <h1>🍳 Resep Makanan</h1>
+      <input type="text" id="search" placeholder="Cari resep..." />
+    </header>
+
+    <section class="kategori-container">
+      <button class="kategori-btn active" data-kategori="semua">Semua</button>
+      <button class="kategori-btn" data-kategori="utama">Menu Utama</button>
+      <button class="kategori-btn" data-kategori="penutup">Penutup</button>
+      <button class="kategori-btn" data-kategori="minuman">Minuman</button>
+      <button class="kategori-btn" data-kategori="tradisional">Tradisional</button>
+    </section>
+
+    <main id="recipe-list"></main>
+
+    <footer>
+      <p>© 2025 Aplikasi Resep Makanan</p>
+    </footer>
+  </div>
+
+  <!-- Halaman Detail -->
+  <div class="app hidden" id="detail-page">
+    <button id="back-btn" class="back-btn">← Kembali</button>
+    <div id="detail-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
